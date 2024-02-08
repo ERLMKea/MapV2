@@ -21,10 +21,9 @@ public class Main {
         mapString.forEach((key,value) -> System.out.println(key + " value=" + value));
     }
 
-
     public static void main(String[] args) {
-        List<String> words = Arrays.asList("Hej", "med", "digbbbbbbbbb");
-        String urlEb = "www.eb.dk";
+        List<String> words = Arrays.asList("Fonseca", "<div", "<h", "tre");
+        String urlEb = "https://ekstrabladet.dk/";
         UrlReader urlReader = new UrlReader();
         Map<String, Integer> mapWords = urlReader.readUrl(urlEb, words);
         mapWords.forEach((key,value) -> System.out.println(key + " value=" + value));
